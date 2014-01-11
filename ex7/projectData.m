@@ -1,4 +1,8 @@
 function Z = projectData(X, U, K)
+
+
+
+
 %PROJECTDATA Computes the reduced data representation when projecting only 
 %on to the top k eigenvectors
 %   Z = projectData(X, U, K) computes the projection of 
@@ -18,8 +22,7 @@ Z = zeros(size(X, 1), K);
 %                    projection_k = x' * U(:, k);
 %
 
-
-
+Z = X*U(:,1:K);
 
 % =============================================================
 
